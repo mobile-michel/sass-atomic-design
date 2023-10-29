@@ -1,0 +1,38 @@
+/********************************/
+/* Simple.css v2.2.1 (May 2023) */
+/********************************/
+
+:root, html {
+  /* Set sans-serif & mono fonts */
+  --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+  --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  --standard-border-radius: 5px;
+}
+
+  /* Light theme */
+html[data-theme='light'] {
+  --bg: var(--primary);
+  --accent-bg: var(--primaryDark500);
+  --text: var(--secondary);
+  --text-light: var(--secondaryDark500);
+  --border: var(--secondaryLight500);
+  --accent: var(--accentV1);
+  --code: #d81b60;
+  --preformatted: #444;
+  --marked: #ffdd33;
+  --disabled: #efefef;
+}
+
+/* Dark theme */
+html[data-theme='dark'] {
+    --bg: var(--secondaryDark500);
+    --accent-bg: var(--primaryDark600);
+    --text: var(--primary);
+    --text-light: #ababab;
+    --accent: var(--accentV1);
+    --code: #f06292;
+    --preformatted: #ccc;
+    --disabled: #111;
+}
