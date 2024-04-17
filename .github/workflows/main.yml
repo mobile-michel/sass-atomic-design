@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies & build
         run: |
           npm install
-          npm run build
+          npm run build-gp
       - uses: actions/upload-pages-artifact@v2
 
   deploy:
