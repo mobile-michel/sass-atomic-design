@@ -7,7 +7,7 @@
         "watch:eleventy": "npx @11ty/eleventy --serve",
         "watch:sass": "npx sass src/sass:_site/assets/css --watch",
         "start": "npm run watch:eleventy & npm run watch:sass",
-        "build": "sass src/sass:_site/assets/css --style=compressed && eleventy --pathprefix='sass-atomic-design",
+        "build": "sass src/sass:_site/assets/css --style=compressed && eleventy --pathprefix='sass-atomic-design'",
         "debug": "DEBUG=* eleventy"
     },
     "keywords": ["eleventy", "liquidjs", "sass", "atomic design"],
