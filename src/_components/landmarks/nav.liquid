@@ -1,5 +1,5 @@
 <nav aria-label="navbar">
-    <a href="/">Home</a>
+    <a href="{{ '/' | url }}">Home</a>
     <input type="checkbox" id="side-menu">
     <label role="hamburger" for="side-menu">
       <span></span>
@@ -8,7 +8,7 @@
       <ul>
         {% for nav in collections.primary reversed %}
           <li {% if page.url == nav.url %}aria-current="page"{% endif %}>
-            <a href="{{ nav.url }}">{{ nav.data.title }}</a>
+            <a href="{{ nav.url | url }}">{{ nav.data.title }}</a>
           </li>
         {% endfor %}
       </ul>
